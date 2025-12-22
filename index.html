@@ -39,10 +39,22 @@
           <button type="submit">Subscribe to monthly newsletter</button>
         </form>
       </section>
+      <section>
+        <div class="card hidden" id="success-card">
+          <img
+            src="./assets/images/icon-success.svg"
+            alt="icon-success"
+            class="success-icon"
+          />
+          <h1 id="success-title" class="title">Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <span id="user-email"></span>. Please open it and click the button
+            inside to confirm your subscription.
+          </p>
+          <button id="dismiss-btn" type="button">Dismiss message</button>
+        </div>
+      </section>
     </main>
-
-    <!--Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message-->
   </body>
 </html>
