@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: hsl(0, 0%, 58%);
+  --primary: hsl(4, 100%, 67%);
+  --text: hsl(234, 29%, 20%);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  place-items: start;
+}
+.signup-form {
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  color: hsl(234, 29%, 20%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 375px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-content {
+  padding: 56px;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+
+  margin: 0 0 12px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 20px 20px 0 20px;
+}
