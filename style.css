@@ -43,10 +43,26 @@ body {
 
 .title {
   font-family: Roboto, sans-serif;
-
   margin: 0 0 12px;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: -0.5px;
   padding: 20px 20px 0 20px;
+}
+
+p {
+  padding: 0 20px;
+}
+
+li {
+  margin-bottom: 16px;
+  list-style: none;
+  gap: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
 }
