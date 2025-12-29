@@ -19,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  place-items: start;
 }
 .signup-form {
   width: 100%;
@@ -32,7 +31,6 @@ body {
   color: hsl(234, 29%, 20%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 375px;
-  min-height: 740px;
   text-align: left;
   margin: 10px;
 }
@@ -59,9 +57,19 @@ body {
 .list__item {
   font-family: Roboto, sans-serif;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   gap: 16px;
   margin-bottom: 16px;
+}
+
+.list__item span:first-child {
+  display: flex;
+  align-items: flex-start;
+}
+
+.list__item img {
+  display: block;
+  margin: 0;
 }
 
 form {
@@ -108,7 +116,22 @@ button:hover {
   background: linear-gradient(135deg, #ff5379, #ff693e);
   transform: translateY(-1px);
 }
-
+/*
 .card.hidden {
   display: none;
+}
+*/
+
+.card-hidden {
+  background: #ffffff;
+  max-width: 375px;
+  padding: 32px;
+}
+
+img {
+  display: block;
+  margin: 20px 0 20px 0;
+}
+
+.dismiss-btn {
 }
