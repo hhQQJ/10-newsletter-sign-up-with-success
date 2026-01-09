@@ -127,8 +127,17 @@ button:hover {
   background: #ffffff;
   max-width: 375px;
   padding: 20px;
+  min-height: 800px;
 }
 
 img {
   display: block;
+}
+
+.success-icon {
+  margin: 100px 0 36px 0;
+}
+
+.dismiss-btn {
+  margin: 36px 0;
 }
