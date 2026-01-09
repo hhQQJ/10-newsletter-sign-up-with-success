@@ -110,6 +110,7 @@ button {
   font-weight: 700;
   cursor: pointer;
   transition: background 0.25s ease, transform 0.15s ease;
+  width: 100%;
 }
 
 button:hover {
@@ -125,12 +126,9 @@ button:hover {
 .card-hidden {
   background: #ffffff;
   max-width: 375px;
-  padding: 32px;
+  padding: 20px;
 }
 
 img {
   display: block;
-}
-
-.dismiss-btn {
 }
