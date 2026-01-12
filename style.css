@@ -96,7 +96,7 @@ input[type="email"]:focus {
   border-color: #242742;
 }
 
-placeholder {
+.placeholder {
   color: #bfbfbf;
 }
 
@@ -117,13 +117,12 @@ button:hover {
   background: linear-gradient(135deg, #ff5379, #ff693e);
   transform: translateY(-1px);
 }
-/*
+
 .card.hidden {
   display: none;
 }
-*/
 
-.card-hidden {
+.hidden {
   background: #ffffff;
   max-width: 375px;
   padding: 20px;
