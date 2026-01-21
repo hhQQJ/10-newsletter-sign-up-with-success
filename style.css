@@ -5,9 +5,9 @@
 }
 
 :root {
-  --bg: hsl(0, 0%, 58%);
+  --bg: hsl(234, 29%, 20%);
   --primary: hsl(4, 100%, 67%);
-  --text: hsl(234, 29%, 20%);
+  --text: hsl(0, 0%, 58%);
 }
 
 body {
@@ -15,128 +15,138 @@ body {
   background-color: var(--bg);
   margin: 0;
   padding: 0;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.signup-form {
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
 
 .card {
-  background-color: white;
-  color: hsl(234, 29%, 20%);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 375px;
-  text-align: left;
-  margin: 10px;
-}
-.card-text {
+  display: flex;
+  width: 700px;
+  background-color: #fff;
   padding: 20px;
-  margin: 0;
+  border-radius: 20px;
 }
 
-.title {
-  font-family: "Roboto", sans-serif;
-  margin: 15px 0 25px 0;
-  line-height: 1;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+.right {
+  width: 60%;
+  margin-left: 20px;
 }
 
-.features {
-  padding: 0;
-  list-style: none;
-  margin: 0 0 24px;
+.left {
+  width: 40%;
 }
 
-.list__item {
-  font-family: Roboto, sans-serif;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 16px;
+.left img {
+  width: 100%;
 }
 
-.list__item span:first-child {
-  display: flex;
-  align-items: flex-start;
+h1 {
+  font-size: 40px;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 0;
 }
 
-.list__item img {
-  display: block;
-  margin: 0;
+ul {
+  list-style-image: url(./assets/images/icon-list.svg);
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 12px;
 }
 
 form {
-  padding: 10px 0 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  width: 300px;
 }
 
 label {
-  font-size: 14px;
-  font-weight: 500;
+  color: var(--bg);
+  font-size: 12px;
+  margin-bottom: 6px;
 }
-
-input[type="email"] {
-  padding: 16px;
-  font-size: 0.9rem;
-  border-radius: 8px;
-  border: 1px solid #dcdcdc;
-  outline: none;
+input {
+  padding: 10px 15px;
+  margin-bottom: 16px;
+  border: 1px solid var(--bg);
+  border-radius: 5px;
+  font-size: 12px;
 }
-
-input[type="email"]:focus {
-  border-color: #242742;
-}
-
-.placeholder {
-  color: #bfbfbf;
+input::placeholder {
+  color: var(--text);
+  font-size: 12px;
 }
 
 button {
-  padding: 16px;
-  border: none;
-  border-radius: 8px;
-  background: #242742;
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 700;
+  padding: 10px 15px;
+  background-color: var(--bg);
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 5px;
+  font-size: 12px;
   cursor: pointer;
-  transition: background 0.25s ease, transform 0.15s ease;
-  width: 100%;
 }
 
 button:hover {
-  background: linear-gradient(135deg, #ff5379, #ff693e);
-  transform: translateY(-1px);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
-.card.hidden {
+p {
+  width: 340px;
+  font-size: 14px;
+}
+
+/*hidden card*/
+.hide {
   display: none;
 }
-
-.hidden {
-  background: #ffffff;
-  max-width: 375px;
-  padding: 20px;
-  min-height: 800px;
+.card-2 {
+  background-color: white;
+  width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+}
+.card-2 h1 {
+  font-size: 40px;
+}
+.icon-card-2 {
+  width: 50px;
+}
+.card-2 button {
+  width: 100%;
 }
 
-img {
-  display: block;
-}
-
-.success-icon {
-  margin: 100px 0 36px 0;
-}
-
-.dismiss-btn {
-  margin: 36px 0;
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .card h1 {
+    font-size: 30px;
+  }
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+  .left {
+    width: 100%;
+  }
+  .left img {
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+  }
+  form {
+    width: 90%;
+  }
+  .card-2 {
+    min-height: 100vh;
+  }
 }

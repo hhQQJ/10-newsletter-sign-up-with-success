@@ -25,61 +25,40 @@
   </head>
   <body>
     <!-- Sign-up form start -->
-    <main class="signup-form">
-      <section class="card" id="signup-card">
-        <img
-          src="./assets/images/illustration-sign-up-mobile.svg"
-          alt="illustration-sign-up-mobile"
-        />
-        <article class="card-text">
-          <h1 id="signup-title" class="title">Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul class="features">
-            <li class="list__item">
-              <span>
-                <img src="./assets/images/icon-list.svg" alt="icon-list" />
-              </span>
-              <span> Product discovery and building what matters</span>
-            </li>
-            <li class="list__item">
-              <span>
-                <img src="./assets/images/icon-list.svg" alt="icon-list" />
-              </span>
-              <span> Measuring to ensure updates are a success</span>
-            </li>
-            <li class="list__item">
-              <span>
-                <img src="./assets/images/icon-list.svg" alt="icon-list" />
-              </span>
-              <span> And much more!</span>
-            </li>
-          </ul>
-          <form id="newsletter-form">
-            <label for="email">Email address</label>
-            <input type="email" id="email" placeholder="email@company.com" />
-            <button type="submit" id="openBtn">
-              Subscribe to monthly newsletter
-            </button>
-          </form>
-        </article>
+    <main class="card">
+      <section class="right">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form>
+          <label for="email"> Email address</label>
+          <input type="email" id="email" placeholder="  email@company.com" />
+          <button type="submit" id="submit-button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
       </section>
-      <section class="hidden" id="success-section">
+      <section class="left">
         <img
-          src="./assets/images/icon-success.svg"
-          alt="icon-success"
-          class="success-icon"
+          src="/assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
         />
-        <h1 id="success-title" class="title">Thanks for subscribing!</h1>
-        <p>
-          A confirmation email has been sent to
-          <span id="user-email"></span>. Please open it and click the button
-          inside to confirm your subscription.
-        </p>
-        <button class="dismiss-btn" id="dismiss-btn" type="button">
-          Dismiss message
-        </button>
       </section>
     </main>
+    <!-- Success message start -->
+    <div class="card-2 hide">
+      <img src="./assets/images/icon-success.svg" class="icon-card-2" />
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
